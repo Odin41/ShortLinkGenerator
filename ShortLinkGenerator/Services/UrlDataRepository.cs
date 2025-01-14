@@ -1,7 +1,8 @@
 ﻿using System.Security.Cryptography;
 using MhanoHarkness;
+using ShortLinkGenerator.Models;
 
-namespace ShortLinkGenerator;
+namespace ShortLinkGenerator.Services;
 
 public class UrlDataRepository : IUrlDataRepository
 {

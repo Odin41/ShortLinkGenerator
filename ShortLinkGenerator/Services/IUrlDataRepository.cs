@@ -1,4 +1,4 @@
-﻿namespace ShortLinkGenerator;
+﻿namespace ShortLinkGenerator.Services;
 
 public interface IUrlDataRepository
 {

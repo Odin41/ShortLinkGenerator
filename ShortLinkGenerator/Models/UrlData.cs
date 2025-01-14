@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ShortLinkGenerator;
+namespace ShortLinkGenerator.Models;
 
 public class UrlData
 {

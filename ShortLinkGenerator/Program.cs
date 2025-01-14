@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShortLinkGenerator;
+using ShortLinkGenerator.Models;
+using ShortLinkGenerator.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

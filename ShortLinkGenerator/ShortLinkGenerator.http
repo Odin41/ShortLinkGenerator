@@ -1,6 +1,4 @@
-@ShortLinkGenerator_HostAddress = http://localhost:5153
+@ShortLinkGenerator_HostAddress = https://localhost:44371/
 
-GET {{ShortLinkGenerator_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
+POST {{ShortLinkGenerator_HostAddress}}/generate?url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FaZqtIGVaAkr6GVztdEnlAI%2FFlow%3Fnode-id%3D10982-79794%26node-type%3Dframe%26t%3DYmVTPCsHriyCGb15-0
+Accept: text/plain

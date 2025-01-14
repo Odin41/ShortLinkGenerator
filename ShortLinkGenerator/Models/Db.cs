@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ShortLinkGenerator;
+namespace ShortLinkGenerator.Models;
 
 public class Db: DbContext
 {
