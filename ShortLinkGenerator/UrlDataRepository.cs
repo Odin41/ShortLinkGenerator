@@ -1,4 +1,5 @@
-﻿using Base62;
+﻿using System.Security.Cryptography;
+using MhanoHarkness;
 
 namespace ShortLinkGenerator;
 
@@ -13,7 +14,11 @@ public class UrlDataRepository : IUrlDataRepository
 
     public string SaveUrlData(string originalUrl)
     {
-        var shortUrl = new Base62Converter().Encode(originalUrl);
+        var rng = RandomNumberGenerator.Create();
+        var uint32Buffer = new byte[8];
+        rng.GetBytes(uint32Buffer);
+        
+        var shortUrl = Base32Url.ToBase32String(uint32Buffer);
 
         if (!_context.UrlsDataTable.Any(u => u.Token == shortUrl))
         {
